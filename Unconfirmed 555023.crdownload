@@ -1,0 +1,172 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Basics of an array
+
+# In[5]:
+
+
+import numpy
+my_array = numpy.array([0,1,2,3,4])
+print(my_array)
+
+
+# # Array Examples
+
+# In[6]:
+
+
+import numpy as np
+
+a_list = [1,2,3,4]
+a_list
+
+
+# # Examples of an array operation
+
+# In[7]:
+
+
+import numpy as np
+
+array_A = np.array([1,2,3])
+array_B = np.array([4,5,6])
+
+print(array_A + array_B)
+
+
+# # Examples of array indexing
+
+# In[9]:
+
+
+import numpy as np
+
+months_array = np.array(['Jan','Feb','March','Apr','May'])
+print(months_array[3])
+
+
+# In[10]:
+
+
+print(months_array[2:5])
+
+
+# # Interactive examples of a List to an Array
+
+# In[11]:
+
+
+#IMPORT numpy as np
+import numpy as np
+
+
+#Lists
+prices=[170.12,93.29,55.28,145.30,171.81,59.50,100.50]
+earnings=[9.2,5.31,2.41,5.91,15.42,2.51,6.79]
+
+#NumPy arrays
+prices_array = np.array(prices)
+earnings_array = np.array(earnings)
+
+#Print the arrays
+print(prices_array)
+print(earnings_array)
+
+
+# # Add a column
+
+# In[12]:
+
+
+import numpy
+
+a=numpy.array([[1,2,3],[4,5,6]])
+
+b=numpy.array([[400],[800]])
+
+newArray=numpy.append(a,b,axis=1)
+
+print(newArray)
+
+
+# # Sorting Arrays
+
+# In[14]:
+
+
+import numpy as np
+
+arr = np.array([3,2,0,1])
+
+print(np.sort(arr))
+
+
+# # Remove Array Elements
+
+# In[15]:
+
+
+import numpy as np
+
+#create a numpy array
+arr = np.array([1,3,4,2,5])
+
+#remove element at index 2
+arr_new = np.delete(arr,2)
+
+#display the arrays
+print("Original array:",arr)
+print("After deletion:",arr_new)
+
+
+# # 1D numpy array
+
+# In[16]:
+
+
+#create 1D numpy array from a list
+arr = np.array([0,1,2,3,4,5,6,7,8,9])
+
+print('1D Numpy array:')
+print(arr)
+
+
+# # Reshape 1D array to 2D array or Matrix
+
+# In[18]:
+
+
+
+arr = np.array([0,1,2,3,4,5,6,7,8,9])
+
+#convert 1D array to a 2D numpy array of 2 rows and 3 columns
+arr_2d = np.reshape(arr,(2,5))
+
+print(arr_2d)
+
+
+# # Reshaped 2D array is a view of 1D array
+
+# In[19]:
+
+
+arr=np.array([0,1,2,3,4,5,6,7,8,9])
+
+arr_2d = np.reshape(arr,(2,5))
+
+#Modify the 2D numpy array (view object)
+arr_2d[0][0] =22s
+
+print('1D Numpy array:')
+print(arr)
+
+print('2D Numpy array:')
+print(arr_2d)
+
+
+# In[ ]:
+
+
+
+
